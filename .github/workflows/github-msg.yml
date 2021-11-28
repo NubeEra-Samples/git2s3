@@ -24,7 +24,7 @@ jobs:
       - uses: NubeEra-Samples/git2s3@master
         with:
           command: cp
-          source: https://raw.githubusercontent.com/NubeEra-Samples/git2s3/master/local_file.txt?token=ABHDS7KRK5H47XV2H73XZYDBUMTFO
+          source: ./local_file.txt
           destination: s3://bkt28novmujahed/input/local_file.txt
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
