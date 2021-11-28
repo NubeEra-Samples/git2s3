@@ -4,8 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Working on AWS CLI 1
-          run: |
+      - name: Working on AWS CLI 2
+      - run: |
             aws --version
       - run: echo "We Run Latest Ubuntu Operating System from Docker Registry"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
