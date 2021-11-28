@@ -21,7 +21,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - uses: NubeEra-Samples/git2s3@master
+      - name: Working on S3 Copy
+      - uses: actions/checkout@v2
         with:
           command: cp
           source: ./local_file.txt
